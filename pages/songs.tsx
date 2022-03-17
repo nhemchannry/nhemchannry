@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
 import Layouts from "../components/Layouts";
-import Home from "src/Home";
 
-const HomePage: NextPage = () => {
+const Songs: NextPage = () => {
   return (
     <Layouts>
-      <Home />
+      <div>Songs</div>
     </Layouts>
   );
 };
 
-export default HomePage;
+export default Songs;
