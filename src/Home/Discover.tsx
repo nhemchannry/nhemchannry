@@ -20,7 +20,7 @@ interface IProps {
 const Discovers = React.memo((props: IProps) => {
   const { title } = props;
   return (
-    <Stack>
+    <Stack flex="1">
       <Typography variant="h6" color="#8c7b75">
         Discover
       </Typography>

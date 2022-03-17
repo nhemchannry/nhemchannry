@@ -6,23 +6,21 @@ import Stack from "@mui/material/Stack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import styled from "styled-components";
 import { range } from "lodash";
-// import Slider from "react-slick";
-import HorizontalScroll from "react-scroll-horizontal";
+import Slider from "react-slick";
 
 interface IProps {
   title?: string;
   subtitle?: string;
-  // showSeeAll?: Boolean;
 }
 const NewReleases = React.memo((props: IProps) => {
   const { title, subtitle } = props;
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 4,
-  // };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  };
   return (
     <StyledWrapper>
       <Typography variant="h6" color="#8c7b75">
@@ -47,9 +45,7 @@ const NewReleases = React.memo((props: IProps) => {
           </Typography>
         </Button>
       </Stack>
-      {/* <HorizontalScroll> */}
-      {/* <Slider {...settings}> */}
-      <Stack direction="row" spacing={2}>
+      <Slider {...settings}>
         {range(0, 10).map((item, i) => (
           <Playlists
             key={i}
@@ -57,9 +53,7 @@ const NewReleases = React.memo((props: IProps) => {
             subtitle={"Subtitle" + item}
           />
         ))}
-      </Stack>
-      {/* </Slider> */}
-      {/* </HorizontalScroll> */}
+      </Slider>
     </StyledWrapper>
   );
 });

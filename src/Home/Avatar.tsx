@@ -1,6 +1,7 @@
 import React from "react";
 import { Artists } from "components/Items";
 import Stack from "@mui/material/Stack";
+import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 import { range } from "lodash";
 
@@ -21,9 +22,13 @@ const AvatarImage = React.memo(() => {
         <Typography variant="h4">More Like</Typography>
       </Stack>
       <Stack direction="row" spacing={2}>
-        {range(0, 6).map((item, i) => (
-          <Artists key={i + item} />
-        ))}
+        <Grid container spacing={2}>
+          {range(0, 6).map((item, i) => (
+            <Grid key={i} item xs={3}>
+              <Artists key={i + item} />
+            </Grid>
+          ))}
+        </Grid>
       </Stack>
     </div>
   );
