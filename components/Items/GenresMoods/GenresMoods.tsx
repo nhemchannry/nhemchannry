@@ -3,17 +3,19 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import styled from "styled-components";
 import { autocompleteClasses } from "@mui/material";
+import PeopleIcon from "@mui/icons-material/People";
 
 interface IProps {
   title?: string;
   img?: string;
   itemData?: string;
+  icon?: string;
 }
 const GenresMoods = React.memo((props: IProps) => {
-  const { title } = props;
+  const { title, icon, img } = props;
   return (
     <ImageList sx={{ width: "100%", height: "100%" }} cols={4} rowHeight={200}>
-      {itemData.map((item) => (
+      {itemData.map((item, icon) => (
         <ImageListItem key={item.img}>
           <img
             src={`${item.img}?w=164&h=164&fit=crop&auto=format`}

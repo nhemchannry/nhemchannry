@@ -5,7 +5,8 @@ import Stack from "@mui/material/Stack";
 import { styled as mdstyled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import GenresMoods from "components/Items/GenresMoods";
+import MoodImageIcon from "src/MoodImageIcon/MoodImageIcon";
+import ImageIcon from "components/Items/ImageIcon";
 
 const Item = mdstyled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -43,6 +44,10 @@ const Discovers = React.memo((props: IProps) => {
           </Typography>
         </Button>
       </Stack>
+      <Stack sx={{ textAlign: "center" }} padding="10px">
+        <ImageIcon title="" subtitle={""} />
+      </Stack>
+      {/* <MoodImageIcon title="" /> */}
       {/* <GenresMoods title="" /> */}
       {/* <Stack direction="row" spacing={2}>
         {range(0, 6).map((item, i) => (
