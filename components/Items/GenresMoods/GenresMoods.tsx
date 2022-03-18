@@ -12,11 +12,7 @@ interface IProps {
 const GenresMoods = React.memo((props: IProps) => {
   const { title } = props;
   return (
-    <ImageList
-      sx={{ overflow: "auto", width: 1400, height: 450 }}
-      cols={5}
-      rowHeight={200}
-    >
+    <ImageList sx={{ width: "100%", height: "100%" }} cols={4} rowHeight={200}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -126,10 +122,6 @@ const itemData = [
   {
     img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
     title: "sport",
-  },
-  {
-    img: "https://wallpaperaccess.com/full/2968861.jpg",
-    title: "adventer sport",
   },
 ];
 
