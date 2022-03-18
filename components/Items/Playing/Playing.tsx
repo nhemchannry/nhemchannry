@@ -59,14 +59,14 @@ const Playing = React.memo(() => {
 
 const StyledWrapper = styled(Stack)`
   && {
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 1400;
     height: var(--playing_h);
     padding: 20px 35px;
-    box-shadow: 10px -6px 15px 0 rgb(168 179 211 / 24%);
+    box-shadow: 10px -10px 15px rgb(168 179 211 / 24%);
   }
 `;
 const StyledPlay = styled(IconButton)`

@@ -2,6 +2,7 @@ import React from "react";
 import { Stack } from "@mui/material";
 import SideBar from "./SideBar";
 import styled from "styled-components";
+import Playing from "components/Items/Playing";
 
 interface IProps {
   children: any;
@@ -13,6 +14,7 @@ const Layouts = React.memo((props: IProps) => {
         <SideBar></SideBar>
         <StyledContent>{props.children}</StyledContent>
       </Stack>
+      <Playing />
     </StyleLayoutWrapper>
   );
 });
