@@ -6,6 +6,7 @@ import Stack from "@mui/material/Stack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import styled from "styled-components";
 import { range } from "lodash";
+import Slider from "react-slick";
 
 interface IProps {
   title?: string;
@@ -13,6 +14,13 @@ interface IProps {
 }
 const Featured = React.memo((props: IProps) => {
   const { title, subtitle } = props;
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+  };
   return (
     <StyledWrapper>
       <Typography variant="h6" color="#8c7b75">
@@ -26,15 +34,15 @@ const Featured = React.memo((props: IProps) => {
       >
         <Typography variant="h4">Featured Playlists</Typography>
       </Stack>
-      <Stack direction="row" spacing={2}>
-        {range(0, 4).map((item, i) => (
+      <Slider {...settings}>
+        {range(0, 10).map((item, i) => (
           <Playlists
             key={i}
             title={"title" + item}
-            subtitle={"subtitle" + item}
+            subtitle={"Subtitle" + item}
           />
         ))}
-      </Stack>
+      </Slider>
     </StyledWrapper>
   );
 });

@@ -2,6 +2,7 @@ import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import styled from "styled-components";
+import { autocompleteClasses } from "@mui/material";
 
 interface IProps {
   title?: string;
@@ -11,7 +12,11 @@ interface IProps {
 const GenresMoods = React.memo((props: IProps) => {
   const { title } = props;
   return (
-    <ImageList sx={{ width: 500, height: 450 }} cols={5} rowHeight={164}>
+    <ImageList
+      sx={{ overflow: "auto", width: 1400, height: 450 }}
+      cols={5}
+      rowHeight={200}
+    >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -81,6 +86,50 @@ const itemData = [
   {
     img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
     title: "sport",
+  },
+  {
+    img: "https://wallpaperaccess.com/full/2968861.jpg",
+    title: "adventer sport",
+  },
+  {
+    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
+    title: "sport",
+  },
+  {
+    img: "https://wallpaperaccess.com/full/2968861.jpg",
+    title: "adventer sport",
+  },
+  {
+    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
+    title: "sport",
+  },
+  {
+    img: "https://wallpaperaccess.com/full/2968861.jpg",
+    title: "adventer sport",
+  },
+  {
+    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
+    title: "sport",
+  },
+  {
+    img: "https://wallpaperaccess.com/full/2968861.jpg",
+    title: "adventer sport",
+  },
+  {
+    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
+    title: "sport",
+  },
+  {
+    img: "https://wallpaperaccess.com/full/2968861.jpg",
+    title: "adventer sport",
+  },
+  {
+    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
+    title: "sport",
+  },
+  {
+    img: "https://wallpaperaccess.com/full/2968861.jpg",
+    title: "adventer sport",
   },
 ];
 

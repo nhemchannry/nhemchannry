@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
+import MyArtists from "src/Artists/Artists";
 import Layouts from "../components/Layouts";
 
-const Artists: NextPage = () => {
+const ArtistsPage: NextPage = () => {
   return (
     <Layouts>
-      <div>Artists</div>
+      <MyArtists title="" />
     </Layouts>
   );
 };
 
-export default Artists;
+export default ArtistsPage;

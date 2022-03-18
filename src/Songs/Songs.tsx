@@ -8,6 +8,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import GenresMoods from "components/Items/GenresMoods";
 import styled from "styled-components";
 import { Grid } from "@mui/material";
+import MyFavoriteSonge from ".";
+import Songer from "components/Items/Songs/Songs";
+import { range } from "lodash";
 
 const Item = mdstyled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -19,14 +22,20 @@ const Item = mdstyled(Paper)(({ theme }) => ({
 interface IProps {
   title: string;
 }
-const Genres = React.memo((props: IProps) => {
+const MyFavoriteSongs = React.memo((props: IProps) => {
   const { title } = props;
   return (
     <div>
-      <Typography variant="h4">genres & Moods</Typography>
-      <StyledWraper>
-        <GenresMoods title="" />
-      </StyledWraper>
+      <Typography variant="h4">Favorite Songs</Typography>
+      <Stack
+        sx={{ overflow: "auto", paddingRight: 2 }}
+        direction="column"
+        spacing={2}
+      >
+        {range(0, 3).map((item, i) => (
+          <Songer key={i} title={"title" + item} subtitle={"sub" + item} />
+        ))}
+      </Stack>
     </div>
   );
 });
@@ -34,4 +43,4 @@ const StyledWraper = styled.div`
   padding: 2px;
 `;
 
-export default Genres;
+export default MyFavoriteSongs;

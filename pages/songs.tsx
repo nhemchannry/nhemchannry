@@ -1,12 +1,13 @@
 import type { NextPage } from "next";
+import MyFavoriteSongs from "src/Songs";
 import Layouts from "../components/Layouts";
 
-const Songs: NextPage = () => {
+const SongsPage: NextPage = () => {
   return (
     <Layouts>
-      <div>Songs</div>
+      <MyFavoriteSongs title="" />
     </Layouts>
   );
 };
 
-export default Songs;
+export default SongsPage;

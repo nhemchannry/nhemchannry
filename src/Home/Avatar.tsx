@@ -23,8 +23,8 @@ const AvatarImage = React.memo(() => {
       </Stack>
       <Stack direction="row" spacing={2}>
         <Grid container spacing={2}>
-          {range(0, 6).map((item, i) => (
-            <Grid key={i} item xs={3}>
+          {range(0, 12).map((item, i) => (
+            <Grid key={i} item xs={2}>
               <Artists key={i + item} />
             </Grid>
           ))}

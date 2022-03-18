@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Layouts from "../components/Layouts";
 
-const Playlisits: NextPage = () => {
+const PlaylisitsPage: NextPage = () => {
   return (
     <Layouts>
       <div>Playlisits</div>
@@ -9,4 +9,4 @@ const Playlisits: NextPage = () => {
   );
 };
 
-export default Playlisits;
+export default PlaylisitsPage;
