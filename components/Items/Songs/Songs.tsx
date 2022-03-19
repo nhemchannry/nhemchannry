@@ -25,8 +25,8 @@ interface IProps {
 const Songer = React.memo((props: IProps) => {
   const { title, subtitle } = props;
   console.log("songs:::::");
-  const handleFavourite = (title: string) => {
-    console.log("Favourite:::::", title);
+  const handleFavourite = (title: string, subtitle: string) => {
+    console.log("Favourite:::::", title, subtitle);
   };
   return (
     <StyledWrapper>

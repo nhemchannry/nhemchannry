@@ -23,17 +23,7 @@ const Charts = React.memo((props: IProps) => {
   const { title, subtitle } = props;
   return (
     <StyledWraper flex="1">
-      <Typography variant="h6" color="#8c7b75">
-        Hot Track
-      </Typography>
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="left"
-        my={1}
-      >
-        <Typography variant="h4">Global TOP 50</Typography>
-      </Stack>
+      <Typography variant="h4">Charts</Typography>
       <Stack
         sx={{ overflow: "auto", paddingRight: 2 }}
         direction="column"

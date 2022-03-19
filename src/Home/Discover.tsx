@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MoodImageIcon from "src/MoodImageIcon/MoodImageIcon";
 import ImageIcon from "components/Items/ImageIcon";
+import { range } from "lodash";
 
 const Item = mdstyled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -44,16 +45,7 @@ const Discovers = React.memo((props: IProps) => {
           </Typography>
         </Button>
       </Stack>
-      <Stack sx={{ textAlign: "center" }} padding="10px">
-        <ImageIcon title="" subtitle={""} />
-      </Stack>
-      {/* <MoodImageIcon title="" /> */}
-      {/* <GenresMoods title="" /> */}
-      {/* <Stack direction="row" spacing={2}>
-        {range(0, 6).map((item, i) => (
-          <GenresMoods key={i + item} />
-        ))}
-      </Stack> */}
+      <ImageIcon title="" subtitle={""} />
     </Stack>
   );
 });

@@ -1,10 +1,11 @@
+import Addlists from "components/Items/Addlists";
 import type { NextPage } from "next";
 import Layouts from "../components/Layouts";
 
 const PlaylisitsPage: NextPage = () => {
   return (
     <Layouts>
-      <div>Playlisits</div>
+      <Addlists />
     </Layouts>
   );
 };

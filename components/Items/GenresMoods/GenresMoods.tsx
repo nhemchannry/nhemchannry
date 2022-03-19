@@ -93,38 +93,6 @@ const itemData = [
     img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
     title: "sport",
   },
-  {
-    img: "https://wallpaperaccess.com/full/2968861.jpg",
-    title: "adventer sport",
-  },
-  {
-    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
-    title: "sport",
-  },
-  {
-    img: "https://wallpaperaccess.com/full/2968861.jpg",
-    title: "adventer sport",
-  },
-  {
-    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
-    title: "sport",
-  },
-  {
-    img: "https://wallpaperaccess.com/full/2968861.jpg",
-    title: "adventer sport",
-  },
-  {
-    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
-    title: "sport",
-  },
-  {
-    img: "https://wallpaperaccess.com/full/2968861.jpg",
-    title: "adventer sport",
-  },
-  {
-    img: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Hero_image_1200x675_pixels_2-5273134ecbb5c94f78bbc87366502385.jpg",
-    title: "sport",
-  },
 ];
 
 export default GenresMoods;
