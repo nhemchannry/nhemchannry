@@ -7,6 +7,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import styled from "styled-components";
 import { range } from "lodash";
 import Slider from "react-slick";
+import Link from '@mui/material/Link';
 
 interface IProps {
   title?: string;
@@ -33,6 +34,7 @@ const NewReleases = React.memo((props: IProps) => {
         my={1}
       >
         <Typography variant="h4">Releases</Typography>
+        <Link href="/news">
         <Button
           endIcon={
             <Typography variant="h6" color="#8c7b75">
@@ -41,9 +43,10 @@ const NewReleases = React.memo((props: IProps) => {
           }
         >
           <Typography variant="h6" color="#8c7b75">
-            see all
+           see all
           </Typography>
         </Button>
+        </Link>
       </Stack>
       <Slider {...settings}>
         {range(0, 10).map((item, i) => (
